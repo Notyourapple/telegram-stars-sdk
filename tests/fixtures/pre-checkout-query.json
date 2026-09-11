@@ -1,0 +1,15 @@
+{
+  "update_id": 10000,
+  "pre_checkout_query": {
+    "id": "query_precheckout_abc123xyz",
+    "from": {
+      "id": 12345678,
+      "is_bot": false,
+      "first_name": "Alice",
+      "username": "alice_test"
+    },
+    "currency": "XTR",
+    "total_amount": 250,
+    "invoice_payload": "order_digital_good_101"
+  }
+}

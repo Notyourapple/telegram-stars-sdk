@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "result": {
+    "transactions": [
+      {
+        "id": "tx_chg_user_pay_001",
+        "amount": 250,
+        "nanostar_amount": 0,
+        "date": 1718000000,
+        "source": {
+          "type": "user",
+          "transaction_type": "invoice_payment",
+          "user": {
+            "id": 12345678,
+            "is_bot": false,
+            "first_name": "Alice",
+            "username": "alice_test"
+          },
+          "invoice_payload": "order_digital_good_101"
+        }
+      },
+      {
+        "id": "tx_chg_refund_002",
+        "amount": -250,
+        "nanostar_amount": 0,
+        "date": 1718003600,
+        "receiver": {
+          "type": "user",
+          "transaction_type": "invoice_payment",
+          "user": {
+            "id": 12345678,
+            "is_bot": false,
+            "first_name": "Alice"
+          }
+        }
+      },
+      {
+        "id": "tx_chg_affiliate_003",
+        "amount": 50,
+        "nanostar_amount": 200000000,
+        "date": 1718007200,
+        "source": {
+          "type": "affiliate_program",
+          "sponsor_user": {
+            "id": 99887766,
+            "is_bot": true,
+            "first_name": "PartnerBot",
+            "username": "partner_bot"
+          },
+          "commission_per_mille": 200
+        }
+      },
+      {
+        "id": "tx_chg_fragment_004",
+        "amount": -1000,
+        "nanostar_amount": 0,
+        "date": 1718010800,
+        "receiver": {
+          "type": "fragment",
+          "withdrawal_state": {
+            "type": "succeeded",
+            "date": 1718011000,
+            "url": "https://fragment.com/stars/tx_test_123"
+          }
+        }
+      }
+    ]
+  }
+}
