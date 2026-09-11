@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2026-09-11
 
 ### Added
-- Initial production-grade release of `@YOUR_GITHUB_USERNAME/telegram-stars`.
+- Initial production-grade release of `@notyourapple/telegram-stars`.
 - Zero-runtime-dependency HTTP client with Node.js 20+ native fetch and AbortController.
 - Full Telegram Stars payment support:
   - `sendInvoice` / `createInvoice` with currency `XTR` and single item `prices`.

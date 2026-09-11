@@ -1,5 +1,5 @@
 {
-  "name": "@YOUR_GITHUB_USERNAME/telegram-stars",
+  "name": "@notyourapple/telegram-stars",
   "version": "0.1.0",
   "description": "Production-ready, zero-dependency TypeScript SDK for Telegram Stars payments, balances, transactions, refunds, and subscriptions.",
   "type": "module",
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/telegram-stars-sdk.git"
+    "url": "git+https://github.com/Notyourapple/telegram-stars-sdk.git"
   },
   "keywords": [
     "telegram",
@@ -50,12 +50,12 @@
     "typescript",
     "sdk"
   ],
-  "author": "Gaurab Dowerah",
+  "author": "Notyourapple",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YOUR_GITHUB_USERNAME/telegram-stars-sdk/issues"
+    "url": "https://github.com/Notyourapple/telegram-stars-sdk/issues"
   },
-  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/telegram-stars-sdk#readme",
+  "homepage": "https://github.com/Notyourapple/telegram-stars-sdk#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "access": "public"

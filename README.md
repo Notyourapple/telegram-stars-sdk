@@ -1,12 +1,12 @@
-# @YOUR_GITHUB_USERNAME/telegram-stars
+# @notyourapple/telegram-stars
 
 > A production-ready TypeScript SDK for integrating Telegram Stars payments, balances, transactions, refunds, and payment events into Node.js applications.
 
-[![CI](https://github.com/YOUR_GITHUB_USERNAME/telegram-stars-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_GITHUB_USERNAME/telegram-stars-sdk/actions/workflows/ci.yml)
-[![GitHub Packages](https://img.shields.io/badge/registry-GitHub%20Packages-blue.svg)](https://github.com/YOUR_GITHUB_USERNAME/telegram-stars-sdk/packages)
+[![CI](https://github.com/Notyourapple/telegram-stars-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/Notyourapple/telegram-stars-sdk/actions/workflows/ci.yml)
+[![GitHub Packages](https://img.shields.io/badge/registry-GitHub%20Packages-blue.svg)](https://github.com/Notyourapple/telegram-stars-sdk/packages)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-100%25%20passing-brightgreen)](https://github.com/YOUR_GITHUB_USERNAME/telegram-stars-sdk)
+[![Tests](https://img.shields.io/badge/tests-100%25%20passing-brightgreen)](https://github.com/Notyourapple/telegram-stars-sdk)
 
 ---
 
@@ -67,13 +67,13 @@
 Configure your `.npmrc`:
 
 ```ini
-@YOUR_GITHUB_USERNAME:registry=https://npm.pkg.github.com
+@notyourapple:registry=https://npm.pkg.github.com
 ```
 
 Then install via npm:
 
 ```bash
-npm install @YOUR_GITHUB_USERNAME/telegram-stars
+npm install @notyourapple/telegram-stars
 ```
 
 ---
@@ -83,7 +83,7 @@ npm install @YOUR_GITHUB_USERNAME/telegram-stars
 Initialize the client with your bot token. Initialization is synchronous and never makes background network calls.
 
 ```typescript
-import { TelegramStarsClient } from '@YOUR_GITHUB_USERNAME/telegram-stars';
+import { TelegramStarsClient } from '@notyourapple/telegram-stars';
 
 const stars = new TelegramStarsClient({
   token: process.env.TELEGRAM_BOT_TOKEN!, // Required: Bot token from @BotFather
@@ -99,7 +99,7 @@ const stars = new TelegramStarsClient({
 ## Quick Start
 
 ```typescript
-import { TelegramStarsClient } from '@YOUR_GITHUB_USERNAME/telegram-stars';
+import { TelegramStarsClient } from '@notyourapple/telegram-stars';
 
 const stars = new TelegramStarsClient({
   token: process.env.TELEGRAM_BOT_TOKEN!,
@@ -168,7 +168,7 @@ The SDK requires explicit approval or rejection so your business rules are alway
 import {
   isPreCheckoutQueryUpdate,
   getPreCheckoutQuery,
-} from '@YOUR_GITHUB_USERNAME/telegram-stars';
+} from '@notyourapple/telegram-stars';
 
 async function handleWebhookUpdate(update: unknown) {
   if (isPreCheckoutQueryUpdate(update)) {
@@ -201,7 +201,7 @@ Once Telegram charges the user's Stars balance, a `successful_payment` update ar
 import {
   isSuccessfulPaymentUpdate,
   parseSuccessfulPayment,
-} from '@YOUR_GITHUB_USERNAME/telegram-stars';
+} from '@notyourapple/telegram-stars';
 
 async function handleWebhookUpdate(update: unknown) {
   if (isSuccessfulPaymentUpdate(update)) {
@@ -349,7 +349,7 @@ import {
   TelegramRateLimitError,
   TelegramApiError,
   TelegramValidationError,
-} from '@YOUR_GITHUB_USERNAME/telegram-stars';
+} from '@notyourapple/telegram-stars';
 
 try {
   await stars.payments.refund({ userId, telegramPaymentChargeId });
@@ -431,12 +431,12 @@ To configure authentication for GitHub Packages:
 1. Create a GitHub Personal Access Token (PAT) with `read:packages` scope.
 2. Add the following to your `~/.npmrc`:
    ```ini
-   @YOUR_GITHUB_USERNAME:registry=https://npm.pkg.github.com
+   @notyourapple:registry=https://npm.pkg.github.com
    //npm.pkg.github.com/:_authToken=YOUR_GITHUB_PAT
    ```
 3. Install the package:
    ```bash
-   npm install @YOUR_GITHUB_USERNAME/telegram-stars
+   npm install @notyourapple/telegram-stars
    ```
 
 ---
@@ -445,7 +445,7 @@ To configure authentication for GitHub Packages:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_GITHUB_USERNAME/telegram-stars-sdk.git
+git clone https://github.com/Notyourapple/telegram-stars-sdk.git
 cd telegram-stars-sdk
 
 # Install dependencies

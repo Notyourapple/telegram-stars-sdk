@@ -1,5 +1,5 @@
 /**
- * @YOUR_GITHUB_USERNAME/telegram-stars
+ * @notyourapple/telegram-stars
  * Production-grade Telegram Stars SDK for Node.js / TypeScript
  */
 

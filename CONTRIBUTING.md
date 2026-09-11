@@ -1,4 +1,4 @@
-# Contributing to @YOUR_GITHUB_USERNAME/telegram-stars
+# Contributing to @notyourapple/telegram-stars
 
 Thank you for your interest in contributing to the Telegram Stars SDK!
 
@@ -10,7 +10,7 @@ Requirements:
 - Git
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/telegram-stars-sdk.git
+git clone https://github.com/Notyourapple/telegram-stars-sdk.git
 cd telegram-stars-sdk
 npm install
 ```
